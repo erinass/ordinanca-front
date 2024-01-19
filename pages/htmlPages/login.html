@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        nav {
+            background-color: #cddefa;
+            padding: 1%;
+        }
+
+        nav a {
+            color: #7eabf3;
+            text-decoration: none;
+            margin: 2%;
+        }
+        footer {
+            background-color: #cddefa;
+            color: #72a1ed;
+            margin-top: 20px;
+            padding: 10px;
+            border-top: 1px solid #cddefa;
+            position: relative;
+            width: 100%;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../home.html">Home</a>
+        <a href="../index.html">Pacient List</a>
+        <a href="../appointmentPages/appointment.list.html">Appointment List</a>
+        <a href="../reportPages/report.list.html">Reports List</a>
+
+    </nav>
+
+
+<form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="button" onclick="validateLogin()">Login</button>
+</form>
+<footer class="text-center py-3">
+    <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+</footer>
+
+<script src="/pages/js/login.pacient.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Patient</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #f8f9fa; /* Set a light background color */
+            height: 100vh;
+        }
+
+        .custom-form-container {
+            background-color: white; /* Set a white background color */
+            width: 50%; /* Set the container width to 50% of the page */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 20px; /* Add some padding for better aesthetics */
+            margin-top: 70px; /* Add some top margin for spacing */
+            border-radius: 5px;
+            margin-bottom: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .form-label {
+            color: #007bff; /* Set label text color to blue */
+        }
+
+        .form-control {
+            border: 1px solid #007bff; /* Set blue border color for input fields */
+            border-radius: 5px; /* Add border-radius for rounded corners */
+        }
+
+        #actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #btnSave {
+            background-color: #007bff; /* Set button background color to blue */
+            color: white; /* Set button text color to white */
+            border: 1px solid #007bff; /* Set blue border color */
+            border-radius: 5px; /* Add border-radius for rounded corners */
+        }
+
+        #btnSave:hover {
+            background-color: #fff;
+            color: #72a1ed;
+            border:1px solid #80aaee;
+        }
+       
+
+        #btnReset {
+            background-color: #ffc107; /* Set button background color to yellow */
+            color: #212529; /* Set button text color to dark */
+            border: 1px solid #ffc107; /* Set yellow border color */
+            border-radius: 5px; /* Add border-radius for rounded corners */
+        }
+
+        #btnReset:hover {
+            background-color: #d39e00; /* Darker yellow on hover */
+        }
+
+        #btnCancel {
+            background-color: #dc3545; /* Set button background color to red */
+            color: white; /* Set button text color to white */
+            border: 1px solid #dc3545; /* Set red border color */
+            border-radius: 5px; /* Add border-radius for rounded corners */
+        }
+
+        #btnCancel:hover {
+            background-color: #c82333; /* Darker red on hover */
+        }
+
+        nav {
+            background-color: #cddefa;
+            padding: 1%;
+        }
+
+        nav a {
+            color: #7eabf3;
+            text-decoration: none;
+            margin: 2%;
+        }
+        footer {
+            background-color: #cddefa;
+            color: #72a1ed;
+            margin-top: 100px;
+            padding: 10px;
+            border-top: 1px solid #cddefa;
+            align-self: baseline;
+            /* position: absolute; */
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+  <nav>
+    <a href="../home.html">Home</a>
+    <a href="../index.html">Pacient List</a>
+    <a href="../appointmentPages/appointment.list.html">Appointment List</a>
+    <a href="../reportPages/report.list.html">Reports List</a>
+
+</nav>
+    <div class="custom-form-container">
+        <hr>
+        <form>
+            <div id="pacient">
+                <div class="form-group">
+                    <label for="inputName" class="form-label">Name:</label>
+                    <input type="text" class="form-control mb-2" id="inputName" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputAge" class="form-label">Age:</label>
+                    <input type="text" class="form-control mb-2" id="inputAge" placeholder="Enter your age">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputCity" class="form-label">City:</label>
+                    <input type="text" class="form-control mb-2" id="inputCity" placeholder="Enter your city">
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEmail" class="form-label">Email address:</label>
+                    <input type="email" class="form-control mb-2" id="inputEmail" placeholder="Enter your email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+
+                <div id="actions">
+                    <button type="submit" class="btn btn-primary" id="btnSave">Submit</button>
+                    <button type="reset" class="btn btn-warning" id="btnReset">Reset</button>
+                    <a href="/pages/index.html"> <button type="button" class="btn btn-danger" id="btnCancel">Cancel</button></a>
+                </div>
+                <hr>
+            </div>
+        </form>
+    </div>
+    <footer class="text-center py-3">
+      <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+  </footer>
+
+    <script src="/pages/js/add.pacient.js"></script>
+    <script src="/pages/js/models.pacient.js"></script>
+    <script src="/pages/js/api.pacient.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+</body>
+</html>
