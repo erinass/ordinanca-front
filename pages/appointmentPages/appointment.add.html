@@ -17,7 +17,7 @@
         }
 
         nav a {
-            color: #7eabf3;
+            color: #fff;
             text-decoration: none;
             margin: 2%;
         }
@@ -53,7 +53,7 @@
         }
         footer {
             background-color: #cddefa;
-            color: #72a1ed;
+            color: #fff;
             margin-top: 20px;
             padding: 10px;
             border-top: 1px solid #cddefa;
@@ -64,9 +64,9 @@
         }
         .btn-primary{
             margin-top: 1%;
-            background-color: #cddefa;
+            background-color: #adb9c5;
             border: none;
-            color: #72a1ed;
+            color: #fff;
         }
         .form-group{
             margin-top: 1%;
@@ -75,10 +75,12 @@
 </head>
 <body>
 
-    <nav>
+    <nav class="bg-dark">
         <a href="../home.html">Home</a>
         <a href="../index.html">Patient List</a>
         <a href="appointment.list.html">Appointment List</a>
+        <a href="../reportPages/report.list.html">Reports List</a>
+
     </nav>
 
 
@@ -119,7 +121,7 @@
             <button type="submit" class="btn btn-primary" id="btnSave">Create</button>
         </div>
       </form>
-      <footer class="text-center py-3">
+      <footer class="text-center py-3 bg-dark">
         <p>&copy; 2024 Your Website Name. All rights reserved.</p>
     </footer>
     <script src="appointments.js/add.appointment.js"></script>

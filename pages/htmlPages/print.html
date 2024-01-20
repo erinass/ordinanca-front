@@ -12,35 +12,37 @@
             height: 100vh;
         }
         nav {
-            background-color: #cddefa;
             padding: 1%;
         }
 
         nav a {
-            color: #7eabf3;
+            color: #fff;
             text-decoration: none;
             margin: 2%;
         }
         footer {
-            background-color: #cddefa;
-            color: #72a1ed;
+            color: #fff;
             margin-top: 20px;
             padding: 10px;
-            border-top: 1px solid #cddefa;
+            border-top: 1px solid #fff;
             position: relative;
             width: 100%;
             margin-top: 100px;
         }
         .btn{
-            background-color: #72a1ed;
+            background-color: #adb9c5;
             border: none;
+        }
+        .btn-primary:hover{
+            background-color: white;
+            color: #adb9c5;
         }
 </style>
 </style>
 
 </head>
 <body>
-    <nav>
+    <nav class="bg-dark">
         <a href="../home.html">Home</a>
         <a href="../index.html">Pacient List</a>
         <a href="../appointmentPages/appointment.list.html">Appointment List</a>
@@ -62,17 +64,11 @@
         <div id="btnReport">
 
         </div>
-        <!-- <a class="btn" href="../reportPages/report.add.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
-            </svg>
-            Add Report
-        </a> <br> <br><br> -->
+
         <table class="table">
             <thead class="thead-light">
               <tr>
                 <th scope="col">id</th>
-                <!-- <th scope="col">Pacient</th> -->
                 <th scope="col">Anamnesis</th>
                 <th scope="col">Therapy</th>
                 <th scope="col">Disease</th>
@@ -93,7 +89,7 @@
 
 
 
-<footer class="text-center py-3">
+<footer class="text-center py-3 bg-dark">
     <p>&copy; 2024 Your Website Name. All rights reserved.</p>
 </footer>
     <script src="/pages/js/print.pacient.js"></script>

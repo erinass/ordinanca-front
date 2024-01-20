@@ -10,6 +10,7 @@
 <style>
     body{
             height: 100vh;
+            
         }
     
 
@@ -19,14 +20,14 @@
         }
 
         nav a {
-            color: #7eabf3;
+            color: #fff;
             text-decoration: none;
             margin: 2%;
         }
         
         footer {
             background-color: #cddefa;
-            color: #72a1ed;
+            color: #fff;
             margin-top: 20px;
             padding: 10px;
             border-top: 1px solid #cddefa;
@@ -35,23 +36,36 @@
             width: 100%;
             bottom: 0;
         }
+        .btn{
+            background-color: #adb9c5;
+            border: none;
+        }
+        .container{
+            width: 50%;
+            margin-left: 20%;
+        }
 
 </style>
 </head>
 <body>
 
-    <nav>
+    <nav class="bg-dark">
         <a href="../home.html">Home</a>
         <a href="../index.html">Patient List</a>
         <a href="appointment.list.html">Appointment List</a>
+        <a href="../reportPages/report.list.html">Reports List</a>
     </nav>
-    <div id="appointment">
 
+    <div class="container">
+        <div id="appointment">
+
+        </div>
+        <a href="appointment.list.html"><button type="button" class="btn btn-primary">Go Back</button></a>
+    
     </div>
-    <a href="appointment.list.html"><button type="button" class="btn btn-primary">Go Back</button></a>
+    
 
-
-    <footer class="text-center py-3">
+    <footer class="text-center py-3 bg-dark">
       <p>&copy; 2024 Your Website Name. All rights reserved.</p>
   </footer>
   
